@@ -353,7 +353,7 @@
         class="serial-input"
         id="serialInput"
         type="text"
-        placeholder="輸入你在落點查詢時取得的序號"
+        placeholder="輸入序號"
         autocomplete="off"
         autocapitalize="characters"
         spellcheck="false"
@@ -368,11 +368,9 @@
 
   <!-- Prize list -->
   <div class="prizes">
-    <div class="prize-row"><span class="emoji">🎬</span><div class="name">威秀影城電影票</div><span class="tier tier-grand">特獎</span></div>
-    <div class="prize-row"><span class="emoji">☕</span><div class="name">星巴克 100元兌換券</div><span class="tier tier-first">一獎</span></div>
-    <div class="prize-row"><span class="emoji">📋</span><div class="name">115學測完整歷屆試題</div><span class="tier tier-second">二獎</span></div>
-    <div class="prize-row"><span class="emoji">📖</span><div class="name">得勝者申請寶典</div><span class="tier tier-third">三獎</span></div>
-    <div class="prize-row"><span class="emoji">🏫</span><div class="name">免費自習空間 3 天（含輔導老師）</div><span class="tier tier-consolation">參加獎</span></div>
+    <div class="prize-row"><span class="emoji">☕</span><div class="name">星巴克一杯</div><span class="tier tier-first">一獎</span></div>
+    <div class="prize-row"><span class="emoji">🎬</span><div class="name">電影票一張</div><span class="tier tier-second">二獎</span></div>
+    <div class="prize-row"><span class="emoji">🎯</span><div class="name">會考落點分析優先席次一位</div><span class="tier tier-third">三獎</span></div>
   </div>
 
   <!-- Drum -->
@@ -433,11 +431,9 @@
 
   // ── Prizes ──
   const PRIZES = [
-    { id: 'grand',       emoji: '🎬', tier: '特獎',  tierClass: 'tier-grand',       name: '威秀影城電影票',          weight: 1,  colors: ['#f5c842','#ffe680','#fff'], count: 120, desc: '恭喜你抽到特獎！憑序號截圖向得勝者老師領取威秀影城電影票一張 🎉' },
-    { id: 'first',       emoji: '☕', tier: '一獎',  tierClass: 'tier-first',       name: '星巴克 100元兌換券',       weight: 2,  colors: ['#c0c8d8','#fff','#aab4cc'], count: 90,  desc: '恭喜你抽到一獎！憑序號截圖向得勝者老師領取星巴克 100元兌換券一張 ☕' },
-    { id: 'second',      emoji: '📋', tier: '二獎',  tierClass: 'tier-second',      name: '115學測完整歷屆試題',      weight: 10, colors: ['#e8956a','#ffcba4','#fff'], count: 70,  desc: '恭喜你抽到二獎！憑序號截圖向得勝者老師領取115學測完整歷屆試題一份 📋' },
-    { id: 'third',       emoji: '📖', tier: '三獎',  tierClass: 'tier-third',       name: '得勝者申請寶典',           weight: 20, colors: ['#5bc8f5','#a0e0ff','#fff'], count: 55,  desc: '恭喜你抽到三獎！憑序號截圖向得勝者老師領取《得勝者申請寶典》一本 📖' },
-    { id: 'consolation', emoji: '🏫', tier: '參加獎', tierClass: 'tier-consolation', name: '免費自習空間 3 天',         weight: 30, colors: ['#5ce68a','#a0f5bc','#fff'], count: 45,  desc: '恭喜你抽到參加獎！憑序號截圖向得勝者老師領取免費自習空間使用權 3 天 🏫（現場有輔導老師可問問題）' },
+    { id: 'first',  emoji: '☕', tier: '一獎', tierClass: 'tier-first',  name: '星巴克一杯',              weight: 15, colors: ['#c0c8d8','#fff','#aab4cc'], count: 90, desc: '恭喜你抽到一獎！憑序號截圖向得勝者老師領取星巴克一杯 ☕' },
+    { id: 'second', emoji: '🎬', tier: '二獎', tierClass: 'tier-second', name: '電影票一張',              weight: 5,  colors: ['#e8956a','#ffcba4','#fff'], count: 70, desc: '恭喜你抽到二獎！憑序號截圖向得勝者老師領取電影票一張 🎬' },
+    { id: 'third',  emoji: '🎯', tier: '三獎', tierClass: 'tier-third',  name: '會考落點分析優先席次一位', weight: 80, colors: ['#5bc8f5','#a0e0ff','#fff'], count: 55, desc: '恭喜你抽到三獎！憑序號截圖向得勝者老師預約會考落點分析優先席次一位 🎯' },
   ];
 
   const tierStyles = {
